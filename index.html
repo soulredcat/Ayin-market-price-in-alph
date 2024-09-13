@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Ayin DEX Price Tracker</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <script src="./tokens.js"></script>
+
+   <label id="alphPrice"></label>
+   <input type="checkbox" id="autoUpdate" onchange="autoUpdate()"><label for="autoUpdate">Auto Update Price</label>
+   <button class="link" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+   <h4 id="loading"><i>Loading prices...</i></h4>
+
+   <table id="tokenlisttable">
+   <div id="tokenlisttable"></div>
+<input type="checkbox" id="autoUpdate" onclick="autoUpdate()"> Auto Update
+<div id="alphPrice"></div>
+<div id="loading">Loading...</div>
+      <tr>
+         <td><b>#</b></td>
+      </tr>
+   </table>
+   <div id="apadcoinBox" class="token-box"></div>
+   <div id="ayincoinBox" class="token-box"></div>
+   <div id="UsdtcoinBox" class="token-box"></div>
+   <div id="ayincoinBox" class="token-box"></div>
+   <div id="apadcoinBox" class="token-box"></div>
+   <div id="alph-ayin" class="token-box"></div>
+   
+</body>
+
+</html>
