@@ -335,6 +335,60 @@ async function displayUsdtcoin() {
         ayincoinElement.innerHTML = "AYIN coin not found.";
     }
 }
+//usdc
+async function displayUsdccoin() {
+   const alphUsd = await getAlphUsd();
+   const ayincoinElement = document.getElementById("usdccoinBox");
+   
+   // Temukan token AYIN di tokenList
+   const token = tokenList.find(t => t.usdccoin === "USDC");
+   if (token) {
+       try {
+           // Ambil harga token dari API
+           const usdcprice = await getPrice(token.contractid, token.tokenid, token.decimals);
+           const usdcPerAlph = usdcprice[0] / usdcprice[1];
+           const usdcInAlph = usdcPerAlph.toFixed(18); // Harga dalam ALPH
+           
+           ayincoinElement.innerHTML = `
+               <strong>Coin:</strong> ${token.usdccoin}<br>
+               <strong>Price in ALPH:</strong> ${usdcInAlph}
+           `;
+       } catch (err) {
+           ayincoinElement.innerHTML = "Error fetching AYIN price.";
+           console.error(err);
+       }
+   } else {
+       ayincoinElement.innerHTML = "AYIN coin not found.";
+   }
+}
+//wbtc
+async function displaywbtccoin() {
+   const alphUsd = await getAlphUsd();
+   const ayincoinElement = document.getElementById("wbtccoinBox");
+   
+   // Temukan token AYIN di tokenList
+   const token = tokenList.find(t => t.wbtccoin === "WBTC");
+   if (token) {
+       try {
+           // Ambil harga token dari API
+           const wbtcprice = await getPrice(token.contractid, token.tokenid, token.decimals);
+           const wbtcPerAlph = wbtcprice[1] / wbtcprice[0];
+           const wbtcInAlph = wbtcPerAlph.toFixed(18); // Harga dalam ALPH
+           
+           ayincoinElement.innerHTML = `
+               <strong>Coin:</strong> ${token.wbtccoin}<br>
+               <strong>Price in ALPH:</strong> ${wbtcInAlph}
+           `;
+       } catch (err) {
+           ayincoinElement.innerHTML = "Error fetching AYIN price.";
+           console.error(err);
+       }
+   } else {
+       ayincoinElement.innerHTML = "AYIN coin not found.";
+   }
+}
+
+
 
 async function displayalphayin() {
     const alphUsd = await getAlphUsd();
@@ -354,7 +408,7 @@ async function displayalphayin() {
                 <strong>Price in ALPH:</strong> ${AYINInAlph}
             `;
         } catch (err) {
-            ayincoinElement.innerHTML = "Error fetching AYIN price.";
+            ayincoinElement.innerHTML = "Error fetching USDT price.";
             console.error(err);
         }
     } else {
