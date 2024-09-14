@@ -256,7 +256,7 @@ const ALPH_DECIMALS = 18;
       function toggleDarkMode() {
          document.body.classList.toggle("dark-mode");
       }
-	  
+/*
 //apad
 async function displayApadcoin() {
     const alphUsd = await getAlphUsd();
@@ -395,20 +395,24 @@ async function displayalphayin() {
     const ayincoinElement = document.getElementById("alph-ayin");
     
     // Temukan token AYIN di tokenList
-    const token = tokenList.find(t => t.usdtcoin === "USDT");
+    const token = tokenList.find(t => t.ayincoin === "AYIN");
     if (token) {
         try {
             // Ambil harga token dari API
-            const price = await getPrice(token.contractid, token.tokenid, token.decimals);
-            const alphayinPerAlph = price[1] / price[0];
-            const alphayinInAlph = alphayinPerAlph.toFixed(6); // Harga dalam ALPH
+            const ayinprice = await getPrice(token.contractid, token.tokenid, token.decimals);
+            const ayinPerAlph = ayinprice[1] / ayinprice[0];
+            const ayinInAlph = ayinPerAlph.toFixed(18); // Harga dalam ALPH
+            const usdtprice = await getPrice(token.contractid, token.tokenid, token.decimals);
+            const usdtPerAlph = usdtprice[1] / usdtprice[0];
+            const usdtInAlph = usdtPerAlph.toFixed(18); // Harga dalam ALPH
             
             ayincoinElement.innerHTML = `
                 <strong>Coin:</strong> alph-ayin<br>
-                <strong>Price in ALPH:</strong> ${AYINInAlph}
+                <strong>ALPH to ayin:</strong> ${ayinInAlph}<br>
+                <strong>ALPH to USDT:</strong> ${usdtInAlph}<br>
             `;
         } catch (err) {
-            ayincoinElement.innerHTML = "Error fetching USDT price.";
+            ayincoinElement.innerHTML = "Error fetching ayin/usdt price.";
             console.error(err);
         }
     } else {
@@ -425,3 +429,4 @@ displayUsdtcoin();
 displayalphayin();
 displayUsdccoin();
 displaywbtccoin();
+*/

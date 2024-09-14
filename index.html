@@ -9,21 +9,14 @@
 
 <body>
    <script src="./tokens.js"></script>
+   <script src="./displayPrices.js"></script>
 
    <label id="alphPrice"></label>
    <input type="checkbox" id="autoUpdate" onchange="autoUpdate()"><label for="autoUpdate">Auto Update Price</label>
    <button class="link" onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
    <h4 id="loading"><i>Loading prices...</i></h4>
-
-   <table id="tokenlisttable">
-   <div id="tokenlisttable"></div>
-<input type="checkbox" id="autoUpdate" onclick="autoUpdate()"> Auto Update
-<div id="alphPrice"></div>
-<div id="loading">Loading...</div>
-      <tr>
-         <td><b>#</b></td>
-      </tr>
+   
    </table>
    <div id="apadcoinBox" class="token-box"></div>
    <div id="ayincoinBox" class="token-box"></div>
@@ -34,7 +27,6 @@
    <div id="wangcoinBox" class="token-box"></div>
    <div id="topcoinBox" class="token-box"></div>
    <div id="chengccoinBox" class="token-box"></div>
-   <div id="alph-ayin" class="token-box"></div>
    
 </body>
 
