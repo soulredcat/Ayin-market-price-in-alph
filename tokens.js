@@ -7,7 +7,7 @@ const tokenList = [
       contractid: "25ywM8iGxKpZWuGA5z6DXKGcZCXtPBmnbQyJEsjvjjWTy",
       ayincoin: "AYIN",
       decimals: 18,
-      //url_dashboard: "https://status.notrustverify.ch/d-solo/e2aa92a7-e89d-425f-98a0-c730bf3be1dd/ayin?orgId=1&refresh=5m&theme=light&panelId=1"
+  
    },
    {
       tokenid:
@@ -17,7 +17,6 @@ const tokenList = [
       decimals: 18,
       circulating_supply_address: "27HxXZJBTPjhHXwoF1Ue8sLMcSxYdxefoN2U6d8TKmZsm",
       supply: 100000000,
-      //url_dashboard: "https://status.notrustverify.ch/d-solo/e2aa92a7-e89d-425f-98a0-c730bf3be1dd/ayin?orgId=1&refresh=5m&theme=light&panelId=9"
    },
    {
       tokenid:
@@ -56,9 +55,6 @@ const tokenList = [
       ngucoin: "NGU",
       decimals: 7,
       supply: 7777777,
-      //url_dashboard: "https://status.notrustverify.ch/d-solo/e2aa92a7-e89d-425f-98a0-c730bf3be1dd/ayin?orgId=1&refresh=5m&theme=light&panelId=12"
-      //supply: 69_000_000,
-      //circulating_supply_address: "19TUu8oE8dfDzH3RuJhACdBFh3Wndez7xZ8Fqjb13GiKd"
    },
    {
       tokenid:
@@ -261,7 +257,7 @@ const ALPH_DECIMALS = 18;
          document.body.classList.toggle("dark-mode");
       }
 	  
-
+//apad
 async function displayApadcoin() {
     const alphUsd = await getAlphUsd();
     const apadcoinElement = document.getElementById("apadcoinBox");
@@ -271,13 +267,13 @@ async function displayApadcoin() {
     if (token) {
         try {
             // Ambil harga token dari API
-            const price = await getPrice(token.contractid, token.tokenid, token.decimals);
-            const pricePerAlph = price[0] / price[1];
-            const priceInAlph = pricePerAlph.toFixed(6); // Harga dalam ALPH
+            const priceapad = await getPrice(token.contractid, token.tokenid, token.decimals);
+            const apadPerAlph = priceapad[0] / priceapad[1];
+            const apadInAlph = apadPerAlph.toFixed(18); // Harga dalam ALPH
             
             apadcoinElement.innerHTML = `
                 <strong>Coin:</strong> ${token.apadcoin}<br>
-                <strong>Price in ALPH:</strong> ${priceInAlph}
+                <strong>Price in ALPH:</strong> ${apadInAlph}
             `;
         } catch (err) {
             apadcoinElement.innerHTML = "Error fetching APAD price.";
@@ -287,6 +283,7 @@ async function displayApadcoin() {
         apadcoinElement.innerHTML = "APAD coin not found.";
     }
 }
+//ayin
 async function displayAyincoin() {
     const alphUsd = await getAlphUsd();
     const ayincoinElement = document.getElementById("ayincoinBox");
@@ -298,7 +295,7 @@ async function displayAyincoin() {
             // Ambil harga token dari API
             const price = await getPrice(token.contractid, token.tokenid, token.decimals);
             const AYINPerAlph = price[1] / price[0];
-            const AYINInAlph = AYINPerAlph.toFixed(6); // Harga dalam ALPH
+            const AYINInAlph = AYINPerAlph.toFixed(18); // Harga dalam ALPH
             
             ayincoinElement.innerHTML = `
                 <strong>Coin:</strong> ${token.ayincoin}<br>
@@ -312,7 +309,7 @@ async function displayAyincoin() {
         ayincoinElement.innerHTML = "AYIN coin not found.";
     }
 }
-
+//usdt
 async function displayUsdtcoin() {
     const alphUsd = await getAlphUsd();
     const ayincoinElement = document.getElementById("UsdtcoinBox");
@@ -324,7 +321,7 @@ async function displayUsdtcoin() {
             // Ambil harga token dari API
             const price = await getPrice(token.contractid, token.tokenid, token.decimals);
             const pricePerAlph = price[1] / price[0];
-            const priceInAlph = pricePerAlph.toFixed(6); // Harga dalam ALPH
+            const priceInAlph = pricePerAlph.toFixed(18); // Harga dalam ALPH
             
             ayincoinElement.innerHTML = `
                 <strong>Coin:</strong> ${token.usdtcoin}<br>
@@ -361,7 +358,7 @@ async function displayalphayin() {
             console.error(err);
         }
     } else {
-        ayincoinElement.innerHTML = "AYIN coin not found.";
+        ayincoinElement.innerHTML = "USDT coin not found.";
     }
 }
 
@@ -371,4 +368,6 @@ async function displayalphayin() {
 displayApadcoin();
 displayAyincoin();
 displayUsdtcoin();
-displayalphayin()
+displayalphayin();
+displayUsdccoin();
+displaywbtccoin();
