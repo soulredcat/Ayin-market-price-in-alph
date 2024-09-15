@@ -130,9 +130,7 @@ async function displaywbtccoin() {
        ayincoinElement.innerHTML = "AYIN coin not found.";
    }
 }
-
-
-
+//ngu
 async function displayalphayin() 
 {
     const alphUsd = await getAlphUsd();

@@ -1,10 +1,17 @@
-<style/>
-        .token-box {
-            float: right;
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-bottom: 10px;
-            width: 200px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-        }
-</style>
+.token-box {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 40px); /* 3 boxes per row */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    vertical-align: top;
+}
+
+.token-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
