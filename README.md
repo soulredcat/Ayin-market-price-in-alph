@@ -1,9 +1,12 @@
-Yo! This program is free for ya to use, share, and tweak however ya like, under the terms of the GNU General Public License, Version 3 (or later, if ya down with that).
-i won't bulid exchange in here. dosent plan to..?
-so trade it in ayin web
-my plan you can use this on your own computer no need external website. mybe some furture is limited?
+Yo! Here's the Deal:
+This program is totally free for you to use, share, and tweak however you want, under the GNU General Public License, Version 3 (or later, if that works for you).
 
-We’re hooking ya up with this code in the hope it'll help you out, but no promises, no warranties. So, if things go sideways, it’s on you, homie. Basically, don’t come cryin’ if it doesn’t work or messes stuff up.
-By using this, you’re agreeing to keep this code open and free. If you modify it or share it, you gotta stick with the same license and give credit where it’s due. Sharing is caring, yo!
+Quick note: We mainly built this for NFTs, but since the program works with a lot of different data, we figured, why not share it so everyone can use it? That said, there are a few parts we’re not making public for security reasons—gotta protect our data, you know?
 
-Check out the full legal deets at <https://www.gnu.org/licenses/>.
+Also, just so you know: I’m not planning to build an exchange or anything like that. If you want to trade, go check out the AYIN website. This is meant to be used on your own computer, no need for any external websites. There might be some limited features down the road, but for now, it’s all good.
+
+We’re sharing this code to help you out, but just to be clear: no promises, no guarantees, no warranties. If something breaks or doesn’t work how you expected, that’s on you. So, don’t come back blaming us if things go wrong.
+
+By using this, you agree to keep the code open and free. If you modify it or share it, make sure you stick with the same license and give credit where it’s due. Sharing is caring, right?
+
+Check out the full legal details at: https://www.gnu.org/licenses/.
