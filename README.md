@@ -9,4 +9,8 @@ We’re sharing this code to help you out, but just to be clear: no promises, no
 
 By using this, you agree to keep the code open and free. If you modify it or share it, make sure you stick with the same license and give credit where it’s due. Sharing is caring, right?
 
+
+update: sad thing we need history data for price so need database for history data. we will bulid one and this project will continue but no chart
+
+
 Check out the full legal details at: https://www.gnu.org/licenses/.
