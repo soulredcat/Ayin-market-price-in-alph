@@ -133,22 +133,21 @@ async function displaywbtccoin() {
 
 
 
-async function displayalphayin() {
+async function displayalphayin() 
+{
     const alphUsd = await getAlphUsd();
     const ayincoinElement = document.getElementById("alph-ayin");
     
     // Temukan token AYIN di tokenList
     const token = tokenList.find(t => t.ayincoin === "AYIN");
-    if (token) {
+    if (token) 
+        {
         try {
             // Ambil harga token dari API
             const ayinprice = await getPrice(token.contractid, token.tokenid, token.decimals);
             const ayinPerAlph = ayinprice[1] / ayinprice[0];
             const ayinInAlph = ayinPerAlph.toFixed(18); // Harga dalam ALPH
-            const usdtprice = await getPrice(token.contractid, token.tokenid, token.decimals);
-            const usdtPerAlph = usdtprice[1] / usdtprice[0];
-            const usdtInAlph = usdtPerAlph.toFixed(18); // Harga dalam ALPH
-            
+                        
             ayincoinElement.innerHTML = `
                 <strong>Coin:</strong> alph-ayin<br>
                 <strong>ALPH to ayin:</strong> ${ayinInAlph}<br>

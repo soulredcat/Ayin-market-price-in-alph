@@ -140,57 +140,6 @@ const ALPH_DECIMALS = 18;
             return 0;
          });
 
-         let counterPos = 10;
-         tokensWithPrices.forEach((value) => {
-            const explorerLink = `${EXPLORER_BASEURL}/addresses/${value['contractid']}`;
-
-			
-			
-
-   
-
-            if (value["//url_dashboard"] !== undefined) {
-               const details = document.createElement("details");
-               const summary = document.createElement("summary");
-               const iframe = document.createElement("iframe");
-               iframe.src = value["//url_dashboard"];
-               iframe.style = "width: 450px; height: 200px; border: none;";
-               summary.innerText = "Historical data";
-               details.appendChild(summary);
-               details.appendChild(iframe);
-               tokenDiv.appendChild(details);
-            }
-
-            tokenListElement.appendChild(tokenDiv);
-
-            if (value["supply"] !== undefined) {
-               const paraMc = document.createElement("td");
-               paraMc.id = `${value["apadcoin"]}mc`;
-               const paraSupply = document.createElement("td");
-               tr.appendChild(paraMc);
-               tr.appendChild(paraSupply);
-               paraSupply.innerHTML = formatNumber(value.supply);
-
-               const paraMaxSupply = document.createElement("td");
-               tr.appendChild(paraMaxSupply);
-               paraMaxSupply.innerHTML = value.maxSupply > 0 ? formatNumber(value.maxSupply) : formatNumber(value['supply']);
-               paraMc.innerHTML = "$" + formatNumber((value.supply * value.pricePerAlph * alphUsd).toFixed(0));
-            }
-
-            if (value["//url_dashboard"] !== undefined) {
-               const details = document.createElement("details");
-               const summary = document.createElement("summary");
-               const iframe = document.createElement("iframe");
-               iframe.src = value["//url_dashboard"];
-               iframe.style = "width: 450px; height: 200px; border: none;";
-               summary.innerText = "Historical data";
-               details.appendChild(summary);
-               details.appendChild(iframe);
-               tr.appendChild(details);
-            }
-
-            tokenListElement.appendChild(tr);
-         });
       }
 
       function formatNumber(number) {
