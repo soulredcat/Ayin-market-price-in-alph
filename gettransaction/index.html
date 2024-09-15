@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Transaksi Terakhir AYIN</title>
+</head>
+<body>
+    <h1>5 Transaksi Terakhir AYIN Token</h1>
+    <ul id="transaction-list"></ul>
+
+    <script>
+        // Base URL of Alephium Explorer
+        const EXPLORER_BASEURL = "https://explorer.mainnet.alephium.org";
+        const CONTRACT_ID = "25ywM8iGxKpZWuGA5z6DXKGcZCXtPBmnbQyJEsjvjjWTy"; // AYIN Token Contract ID
+
+        async function fetchTransactions() {
+            try {
+                // Buat URL untuk mengambil data kontrak
+                const url = `${EXPLORER_BASEURL}/addresses/${CONTRACT_ID}/transactions`;
+
+                // Fetch transaksi dari explorer
+                const response = await fetch(url);
+                const data = await response.json();
+
+                // Ambil 5 transaksi terakhir
+                const transactions = data.slice(0, 5);
+
+                // Tampilkan transaksi
+                const transactionList = document.getElementById("transaction-list");
+                transactions.forEach(tx => {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = `Hash: ${tx.txHash}, From: ${tx.from}, To: ${tx.to}, Amount: ${tx.amount}`;
+                    transactionList.appendChild(listItem);
+                });
+            } catch (error) {
+                console.error("Error fetching transactions:", error);
+            }
+        }
+
+        // Panggil fungsi untuk mengambil dan menampilkan transaksi
+        fetchTransactions();
+    </script>
+</body>
+</html>
