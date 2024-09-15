@@ -1,38 +1,19 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-   <title>Ayin DEX Price Tracker</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Price Tracker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-   <script src="./tokens.js"></script>
-   <script src="./displayPrices.js"></script>
+    <h4 id="loading"><i>Loading prices...</i></h4>
 
-   <label id="alphPrice"></label>
-   <input type="checkbox" id="autoUpdate" onchange="autoUpdate()"><label for="autoUpdate">Auto Update Price</label>
-   <button class="link" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <!-- Kontainer untuk kotak token -->
+    <div class="token-container" id="tokenContainer"></div>
 
-   <h4 id="loading"><i>Loading prices...</i></h4>
-
-   <div class="token-container">
-       <div id="apadcoinBox" class="token-box"></div>
-       <div id="ayincoinBox" class="token-box"></div>
-       <div id="UsdtcoinBox" class="token-box"></div>
-       <div id="usdccoinBox" class="token-box"></div>
-       <div id="wbtccoinBox" class="token-box"></div>
-       <div id="ngucoinBox" class="token-box"></div>
-       <div id="wangcoinBox" class="token-box"></div>
-       <div id="topcoinBox" class="token-box"></div>
-       <div id="chengcoinBox" class="token-box"></div>
-   </div>
-
-   //graph
-   //indicator
-   //chatbox
-   //transaction bar
+    <script src="./tokens.js"></script>
+    <script src="./displayPrices.js"></script>
+	<script src="./tokenlist.js"></script>
 </body>
-
 </html>
