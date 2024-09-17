@@ -37,7 +37,8 @@ function displayTokenPrice(token) {
     tokenBox.className = 'token-box';
     tokenBox.id = `${token.symbol.toLowerCase()}coinBox`;
 
-    const price = (Math.random() * 1000).toFixed(6); // Contoh harga random (bisa diganti dengan API)
+    const price = getPrice(token); // Contoh harga random (bisa diganti dengan API)
+
     
     // Elemen untuk menampilkan logo, simbol, dan harga
     tokenBox.innerHTML = `

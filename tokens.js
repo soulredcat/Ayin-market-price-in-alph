@@ -1,5 +1,6 @@
 
 
+/*
 const tokenList = [
    {
       tokenid:
@@ -82,7 +83,7 @@ const tokenList = [
       supply: 100000000000
    }
 ];
-
+*/
 const ALPH_DECIMALS = 18;
       const EXPLORER_BASEURL = "https://explorer.mainnet.alephium.org";
       const BACKEND_BASEURL = "https://explorer.alephium.notrustverify.ch";
@@ -104,7 +105,7 @@ const ALPH_DECIMALS = 18;
          const tokenListElement = document.getElementById("tokenlisttable");
          const pricePromises = tokenList.map(async (value) => {
             try {
-               const price = await getPrice(value["contractid"], value["tokenid"], value["decimals"]);
+               const price = await getPrice(value["contractid"], value["id"], value["decimals"]);
                const alphBalance = price[0];
                const tokenBalance = price[1];
                const pricePerAlph = alphBalance / tokenBalance;
@@ -112,13 +113,13 @@ const ALPH_DECIMALS = 18;
                let maxSupply = 0;
 
                if (value["circulating_supply_address"] !== undefined) {
-                  supply = await getCirculatingSupply(value["supply"], value["circulating_supply_address"], value["tokenid"], value["decimals"]);
+                  supply = await getCirculatingSupply(value["supply"], value["circulating_supply_address"], value["id"], value["decimals"]);
                   maxSupply = value["supply"];
                }
 
                return {
                   ...value,
-                  priceText: value["apadcoin"],
+                  priceText: value["symbol"],
                   pricePerAlph: pricePerAlph.toFixed(6),
                   priceUsd: pricePerAlph * alphUsd,
                   supply,
@@ -147,13 +148,13 @@ const ALPH_DECIMALS = 18;
          return formatter.format(number);
       }
 
-      async function getPrice(contractid, tokenid, decimals) {
+      async function getPrice(contractid, id, decimals) {
          const price = await Promise.all([
             await fetch(
                BACKEND_BASEURL + "/addresses/" +
                contractid +
                "/tokens/" +
-               tokenid +
+               id +
                "/balance"
             ).then((resp) => resp.json()),
             await fetch(
@@ -186,12 +187,12 @@ const ALPH_DECIMALS = 18;
          return priceUsd;
       }
 
-      async function getCirculatingSupply(supply, address, tokenid, decimals) {
+      async function getCirculatingSupply(supply, address, id, decimals) {
          const leftSupply = await fetch(
             BACKEND_BASEURL + "/addresses/" +
             address +
             "/tokens/" +
-            tokenid +
+            id +
             "/balance"
          ).then((resp) => resp.json()).then(data => { return data['balance'] }).catch(error => {
             console.error(error);
