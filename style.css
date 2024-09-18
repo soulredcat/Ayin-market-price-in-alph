@@ -4,7 +4,7 @@
     border: 1px solid #ddd;
     padding: 10px;
     margin: 10px;
-    width: calc(33.33% - 40px); /* 3 boxes per row */
+    width: calc(20% - 20px); /* 3 boxes per row */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
     vertical-align: top;

@@ -117,8 +117,6 @@ async function displayTokenPrice(token) {
            <strong>${token.symbol}</strong><br>
            <span class="token-price">${pricePerAlph} ALPH</span><br>
            <span class="token-description">${token.description || ''}</span>
-           <span class="token-supply">Supply: ${token.supply}</span><br>
-           <span class="token-contractid">Contract ID: ${token.contractid}</span>
        </div>
    `;
 

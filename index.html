@@ -7,7 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h4 id="loading"><i>Loading prices...</i></h4>
+    <h4></h4> 
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+          {
+          "symbols": [
+            {
+              "proName": "BITSTAMP:BTCUSD",
+              "title": "Bitcoin"
+            },
+            {
+              "proName": "BITSTAMP:ETHUSD",
+              "title": "Ethereum"
+            },
+            {
+              "description": "alephium",
+              "proName": "CRYPTO:ALPHUSD"
+            },
+            {
+              "description": "solona",
+              "proName": "COINBASE:SOLUSD"
+            },
+            {
+              "description": "gold",
+              "proName": "PYTH:XAUUSD"
+            }
+          ],
+          "showSymbolLogo": true,
+          "isTransparent": false,
+          "displayMode": "adaptive",
+          "colorTheme": "light",
+          "locale": "en"
+        }
+          </script>
+        </div>
+        </h4>
 
     <!-- Kontainer untuk kotak token -->
     <div class="token-container" id="tokenContainer"></div>

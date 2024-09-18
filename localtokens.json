@@ -1,63 +1,51 @@
 [
     {
         "symbol": "AYIN",
-        "contractid": "25ywM8iGxKpZWuGA5z6DXKGcZCXtPBmnbQyJEsjvjjWTy",
-        "supply": 1000000000
+        "contractid": "25ywM8iGxKpZWuGA5z6DXKGcZCXtPBmnbQyJEsjvjjWTy"
     },
     {
         "symbol": "APAD",
-        "contractid": "vFpZ1DF93x1xGHoXM8rsDBFjpcoSsCi5ZEuA5NG5UJGX",
-        "supply": 100000000
+        "contractid": "vFpZ1DF93x1xGHoXM8rsDBFjpcoSsCi5ZEuA5NG5UJGX"
     },
     {
         "symbol": "ANSD",
-        "contractid": "2A5R8KZQ3rhKYrW7bAS4JTjY9FCFLJg6HjQpqSFZBqACX",
-        "supply": 500000000
+        "contractid": "2A5R8KZQ3rhKYrW7bAS4JTjY9FCFLJg6HjQpqSFZBqACX"
     },
     {
         "symbol": "AYIN",
-        "contractid": "uM4QJwHqFoTF2Pou8TqwhaDiHYLk4SHG65uaQG8r7KkT",
-        "supply": 200000000
+        "contractid": "uM4QJwHqFoTF2Pou8TqwhaDiHYLk4SHG65uaQG8r7KkT"
     },
     {
         "symbol": "APAD",
-        "contractid": "vFpZ1DF93x1xGHoXM8rsDBFjpcoSsCi5ZEuA5NG5UJGX",
-        "supply": 100000000
+        "contractid": "vFpZ1DF93x1xGHoXM8rsDBFjpcoSsCi5ZEuA5NG5UJGX"
     },
     {
         "symbol": "USDC",
-        "contractid": "2961aauvprhETv6TXGQRc3zZY4FbLnqKon2a4wK6ABH9q",
-        "supply": 500000000
+        "contractid": "2961aauvprhETv6TXGQRc3zZY4FbLnqKon2a4wK6ABH9q"
     },
     {
         "symbol": "AYIN",
-        "contractid": "25ywM8iGxKpZWuGA5z6DXKGcZCXtPBmnbQyJEsjvjjWTy",
-        "supply": 1000000000
+        "contractid": "25ywM8iGxKpZWuGA5z6DXKGcZCXtPBmnbQyJEsjvjjWTy"
     },
     {
         "symbol": "WBTC",
-        "contractid": "28XY326TxvSekaAwiWDLFg2QBRfacSga8dyNJCYGUYNbq",
-        "supply": 100000000
+        "contractid": "28XY326TxvSekaAwiWDLFg2QBRfacSga8dyNJCYGUYNbq"
     },
     {
         "symbol": "NGU",
-        "contractid": "21nj6sBTtQfTwCErYAHF3CNBaDRAc1E1Q3aUCcbsuG8mu",
-        "supply": 7777777
+        "contractid": "21nj6sBTtQfTwCErYAHF3CNBaDRAc1E1Q3aUCcbsuG8mu"
     },
     {
         "symbol": "WANG",
-        "contractid": "uReV154fNdL1fNbvw8qghk67ERGbuPkLToNMCwYjiaXh",
-        "supply": 1500000
+        "contractid": "uReV154fNdL1fNbvw8qghk67ERGbuPkLToNMCwYjiaXh"
     },
     {
         "symbol": "TOP",
-        "contractid": "26hqVwuNQ7DUEMobdySHyDiW1beoDhQHpNaoXGjoHvK2w",
-        "supply": 100000000
+        "contractid": "26hqVwuNQ7DUEMobdySHyDiW1beoDhQHpNaoXGjoHvK2w"
     },
     {
         "symbol": "CHENG",
-        "contractid": "25b5aNfdrNRjJ7ugPTkxThT51L1NSvf8igQyDHKZhweiK",
-        "supply": 100000000000
+        "contractid": "25b5aNfdrNRjJ7ugPTkxThT51L1NSvf8igQyDHKZhweiK"
     },
     {
         "symbol": "GRFN",
