@@ -1,20 +1,42 @@
+
+.page-container {
+    display: flex;
+}
+
+
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.main-content {
+    width: 80%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.token-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
 .token-box {
     display: flex;
     align-items: center;
     border: 1px solid #ddd;
     padding: 10px;
     margin: 10px;
-    width: calc(20% - 20px); /* 3 boxes per row */
+    width: calc(30% - 20px); 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
     vertical-align: top;
-}
-
-.token-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .token-logo img {
