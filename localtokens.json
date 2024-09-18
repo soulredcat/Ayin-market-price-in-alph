@@ -1,0 +1,86 @@
+[
+    {
+        "symbol": "AYIN",
+        "contractid": "25ywM8iGxKpZWuGA5z6DXKGcZCXtPBmnbQyJEsjvjjWTy",
+        "supply": 1000000000
+    },
+    {
+        "symbol": "APAD",
+        "contractid": "vFpZ1DF93x1xGHoXM8rsDBFjpcoSsCi5ZEuA5NG5UJGX",
+        "supply": 100000000
+    },
+    {
+        "symbol": "ANSD",
+        "contractid": "2A5R8KZQ3rhKYrW7bAS4JTjY9FCFLJg6HjQpqSFZBqACX",
+        "supply": 500000000
+    },
+    {
+        "symbol": "AYIN",
+        "contractid": "uM4QJwHqFoTF2Pou8TqwhaDiHYLk4SHG65uaQG8r7KkT",
+        "supply": 200000000
+    },
+    {
+        "symbol": "APAD",
+        "contractid": "vFpZ1DF93x1xGHoXM8rsDBFjpcoSsCi5ZEuA5NG5UJGX",
+        "supply": 100000000
+    },
+    {
+        "symbol": "USDC",
+        "contractid": "2961aauvprhETv6TXGQRc3zZY4FbLnqKon2a4wK6ABH9q",
+        "supply": 500000000
+    },
+    {
+        "symbol": "AYIN",
+        "contractid": "25ywM8iGxKpZWuGA5z6DXKGcZCXtPBmnbQyJEsjvjjWTy",
+        "supply": 1000000000
+    },
+    {
+        "symbol": "WBTC",
+        "contractid": "28XY326TxvSekaAwiWDLFg2QBRfacSga8dyNJCYGUYNbq",
+        "supply": 100000000
+    },
+    {
+        "symbol": "NGU",
+        "contractid": "21nj6sBTtQfTwCErYAHF3CNBaDRAc1E1Q3aUCcbsuG8mu",
+        "supply": 7777777
+    },
+    {
+        "symbol": "WANG",
+        "contractid": "uReV154fNdL1fNbvw8qghk67ERGbuPkLToNMCwYjiaXh",
+        "supply": 1500000
+    },
+    {
+        "symbol": "TOP",
+        "contractid": "26hqVwuNQ7DUEMobdySHyDiW1beoDhQHpNaoXGjoHvK2w",
+        "supply": 100000000
+    },
+    {
+        "symbol": "CHENG",
+        "contractid": "25b5aNfdrNRjJ7ugPTkxThT51L1NSvf8igQyDHKZhweiK",
+        "supply": 100000000000
+    },
+    {
+        "symbol": "GRFN",
+        "contractid": "23mkzHdYdMvNzXSbZ4Y12B7ocF7TeN9ZjV9AzkvmffayV"
+    },
+    {
+        "symbol": "ALPHAGA",
+        "contractid": "23cXw23ZjRqKc7i185ZoH8vh9KT4XTumVRWpVLUecgLMd"
+    },
+    {
+        "symbol": "LFG",
+        "contractid": "27U7xoRUMBDnaKgXgW8H5pihGgGQ8wPihiF4t9HPaJo5h"
+    },
+    {
+        "symbol": "BREAD",
+        "contractid": "28AudXLCDHEQLQaUNziXExuL5PdfwGb3utEpiGkHhT9h1"
+    },
+    {
+        "symbol": "GRUMPY",
+        "contractid": "vMzpiFFSKMJQ1xsB2DkiDYyexooYc6Ln5HWP8ayjpEZu"
+    },
+    {
+        "symbol": "BERRY",
+        "contractid": "w5ZU1rV34YJryDCXCXJBXA77Wbx5L4DCmunDG3Pn5GWb"
+    }
+]
