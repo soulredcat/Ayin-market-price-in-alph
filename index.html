@@ -45,15 +45,32 @@
         </div>
         </h4>
 
-    <!-- Kontainer untuk kotak token -->
-
+   
     <div class="page-container">
         <div class="sidebar">
             <div class="token-container" id="tokenContainer"></div>
         </div>
         
         <div class="main-content">
-        </div>
+
+        </div><div class="tradingview-widget-container" style="height:100%;width:100%">
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 100px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "autosize": true,
+  "symbol": "MEXC:ALPHUSDT",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "light",
+  "style": "1",
+  "locale": "en",
+  "allow_symbol_change": true,
+  "calendar": false,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
     </div>
     <script src="./tokens.js"></script>
 	<script src="./tokenlist.js"></script>

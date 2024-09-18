@@ -13,10 +13,10 @@
 
 
 .main-content {
-    width: 80%;
+    width: 10%;
+    background-color: #f4f4f4;
     padding: 15px;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 
